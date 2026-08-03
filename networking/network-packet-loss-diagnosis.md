@@ -23,3 +23,18 @@ Internet (google.com): loss=20% avg=83.5 ms
 
 ---
 📹 [Video Solution](https://prepare.sh/interview/devops/terminal/network-packet-loss-diagnosis)
+
+---
+#### **Solution**
+
+First run the following in terminal:
+```
+ip route | grep default 
+ping -c 5 gateway > /tmp/network_diagnostics.txt
+
+```
+Once the results are in 
+```
+echo "copy_last_line"> /tmp/network_diagnostics.txt
+
+```
