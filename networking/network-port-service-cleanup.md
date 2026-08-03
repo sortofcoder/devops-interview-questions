@@ -13,3 +13,11 @@ Scan the system for listening TCP/UDP ports between `8000` and `9000`. Identify 
 
 ---
 📹 [Video Solution](https://prepare.sh/interview/devops/terminal/network-port-service-cleanup)
+
+#### **Solution**
+
+```
+ss -tulnp # tcp, udp, listening, numerical, port 
+kill -9 
+
+```
